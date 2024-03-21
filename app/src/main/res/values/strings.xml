@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="enter_value">Enter Value:</string>
+    <string name="enter_value_hint">Enter value to be converted</string>
+    <string name="unit_type">Unit Type:</string>
+    <string name="source_unit">Source Unit Value:</string>
+    <string name="source_unit_type">Source Unit Type:</string>
+    <string name="destination_unit_type">Destination Unit Type:</string>
+    <string name="submit">Submit</string>
+    <string name="spinnerUnitType">Select Unit Type</string>
+    <string name="textViewUnitType">Unit Type:</string>
+
+
+    <!-- Length Units -->
+    <string-array name="length_units">
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+    </string-array>
+
+    <!-- Weight Units -->
+    <string-array name="weight_units">
+        <item>Pounds</item>
+        <item>Ounces</item>
+        <item>Tons</item>
+    </string-array>
+
+    <!-- Temperature Units -->
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <!-- Unit Types -->
+    <string-array name="unit_types">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+    </string-array>
+</resources>

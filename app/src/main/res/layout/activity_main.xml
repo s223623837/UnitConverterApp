@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewUnitType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_type"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerUnitType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUnitType"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textViewSourceUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_value"
+        android:textSize="18sp"
+        android:layout_below="@id/spinnerUnitType"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_value_hint"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/textViewSourceUnit"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@android:color/black"
+        android:autofillHints="number" />
+
+    <TextView
+        android:id="@+id/textViewSourceUnitType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source_unit_type"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextValue"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSourceUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSourceUnitType"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textViewDestUnitType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination_unit_type"
+        android:textSize="18sp"
+        android:layout_below="@id/spinnerSourceUnit"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDestUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDestUnitType"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/spinnerDestUnit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewConvertedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/buttonSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
